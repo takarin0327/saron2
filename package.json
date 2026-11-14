@@ -1,0 +1,17 @@
+{
+  "name": "salon-sample-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "地域サロン向け営業提案用の日本語サンプルHP（依存ゼロの静的サイト）",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "lint": "node scripts/lint.mjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
