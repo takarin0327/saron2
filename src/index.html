@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="ja" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{META}}
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.remove("no-js");document.documentElement.classList.add("js");</script>
+</head>
+<body>
+<a class="skip-link" href="#main">本文へスキップ</a>
+{{SAMPLE_BANNER}}
+{{HEADER}}
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-decor" aria-hidden="true">
+      <span class="hero-blob hero-blob-1"></span>
+      <span class="hero-blob hero-blob-2"></span>
+      <span class="hero-line"></span>
+    </div>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">{{HERO_EYEBROW}}</p>
+        <h1 class="hero-title" id="hero-title">
+          <span>{{HERO_TITLE_1}}</span>
+          <span>{{HERO_TITLE_2}}</span>
+        </h1>
+        <p class="hero-lead">{{HERO_LEAD}}</p>
+        <div class="hero-actions">
+          <a class="button button-primary button-large" href="#reserve">{{HERO_PRIMARY_CTA}}<span class="arrow" aria-hidden="true">→</span></a>
+          <a class="button button-ghost" href="#menu">{{HERO_SECONDARY_CTA}}</a>
+        </div>
+        {{HERO_NOTE}}
+        <ul class="hero-points" aria-label="サロンの特徴">
+          <li><span class="point-mark" aria-hidden="true"></span>カウンセリング重視</li>
+          <li><span class="point-mark" aria-hidden="true"></span>スマートフォンから予約</li>
+          <li><span class="point-mark" aria-hidden="true"></span>初めての方も歓迎</li>
+        </ul>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-arch">
+          <img src="assets/img/hero.svg" alt="" width="720" height="880">
+        </div>
+        <a class="hero-float" href="#reserve">
+          <span class="hero-float-label">RESERVE</span>
+          <span>ご予約・ご相談</span>
+          <span class="hero-float-arrow" aria-hidden="true">→</span>
+        </a>
+        <p class="hero-caption">{{HERO_CAPTION}}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--concerns" id="concerns" aria-labelledby="concerns-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow">{{CONCERNS_EYEBROW}}</p>
+        <h2 id="concerns-title">{{CONCERNS_TITLE}}</h2>
+        {{CONCERNS_LEAD}}
+      </header>
+      <div class="info-grid">{{CONCERN_CARDS}}</div>
+    </div>
+  </section>
+
+  <section class="section section--dark section--reasons" id="reasons" aria-labelledby="reasons-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow">{{REASONS_EYEBROW}}</p>
+        <h2 id="reasons-title">{{REASONS_TITLE}}</h2>
+        {{REASONS_LEAD}}
+      </header>
+      <div class="reason-grid">{{REASON_CARDS}}</div>
+    </div>
+  </section>
+
+  <section class="section section--menu" id="menu" aria-labelledby="menu-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow">{{MENUS_EYEBROW}}</p>
+        <h2 id="menu-title">{{MENUS_TITLE}}</h2>
+        {{MENUS_LEAD}}
+      </header>
+      <div class="menu-filters" role="group" aria-labelledby="menu-filter-label">
+        <p class="menu-filter-label" id="menu-filter-label">{{MENU_FILTER_LABEL}}</p>
+        <div class="filter-chips">{{MENU_FILTERS}}</div>
+        <p class="sr-only" id="menu-filter-status" aria-live="polite"></p>
+      </div>
+      <div class="menu-grid">{{MENU_CARDS}}</div>
+      {{MENU_NOTE}}
+    </div>
+  </section>
+
+  <section class="section section--flow" id="flow" aria-labelledby="flow-title">
+    <div class="container">
+      <header class="section-head section-head--split">
+        <div>
+          <p class="eyebrow">{{FLOW_EYEBROW}}</p>
+          <h2 id="flow-title">{{FLOW_TITLE}}</h2>
+        </div>
+        {{FLOW_LEAD}}
+      </header>
+      <ol class="flow-list">{{FLOW_STEPS}}</ol>
+    </div>
+  </section>
+
+  <section class="section section--anxiety" id="anxiety" aria-labelledby="anxiety-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow">{{ANXIETY_EYEBROW}}</p>
+        <h2 id="anxiety-title">{{ANXIETY_TITLE}}</h2>
+        {{ANXIETY_LEAD}}
+      </header>
+      <div class="anxiety-grid">{{ANXIETY_CARDS}}</div>
+    </div>
+  </section>
+
+  <section class="section section--faq" id="faq" aria-labelledby="faq-title">
+    <div class="container container--narrow">
+      <header class="section-head">
+        <p class="eyebrow">{{FAQ_EYEBROW}}</p>
+        <h2 id="faq-title">{{FAQ_TITLE}}</h2>
+      </header>
+      <div class="faq-list">{{FAQ_ITEMS}}</div>
+    </div>
+  </section>
+
+  <section class="section section--gallery" id="gallery" aria-labelledby="gallery-title">
+    <div class="container">
+      <header class="section-head section-head--split">
+        <div>
+          <p class="eyebrow">{{GALLERY_EYEBROW}}</p>
+          <h2 id="gallery-title">{{GALLERY_TITLE}}</h2>
+        </div>
+        {{GALLERY_LEAD}}
+      </header>
+      <div class="gallery-grid">{{GALLERY_ITEMS}}</div>
+      {{GALLERY_NOTE}}
+      <div class="social-block">
+        <div class="social-block-head">
+          <p class="eyebrow">FOLLOW / CONNECT</p>
+          <h3>SNS・オンラインでもつながる</h3>
+        </div>
+        <div class="social-grid">{{SOCIAL_CARDS}}</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--reserve" id="reserve" aria-labelledby="reserve-title">
+    <div class="container">
+      <header class="section-head section-head--light">
+        <p class="eyebrow">{{RESERVE_EYEBROW}}</p>
+        <h2 id="reserve-title">{{RESERVE_TITLE}}</h2>
+        {{RESERVE_LEAD}}
+      </header>
+      <div class="reserve-layout">
+        <div class="reserve-info">
+          <div class="reserve-options">{{RESERVE_OPTIONS}}</div>
+          {{RESERVE_DEMO_NOTICE}}
+        </div>
+        <div class="reserve-form-wrap">
+          <div class="form-card">
+            <div class="form-card-head">
+              <h3>{{FORM_TITLE}}</h3>
+              {{FORM_BADGE}}
+            </div>
+            <form id="reserve-form" class="reserve-form" {{FORM_ATTRS}}>
+              {{FORM_DEMO_CALLOUT}}
+              <div class="form-fields">
+                <div class="form-grid">
+                  <div class="form-field">
+                    <label for="reserve-name">お名前 <span class="required">必須</span></label>
+                    <input id="reserve-name" name="name" type="text" autocomplete="name" required placeholder="例：山田 花子">
+                  </div>
+                  <div class="form-field">
+                    <label for="reserve-email">メールアドレス <span class="required">必須</span></label>
+                    <input id="reserve-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="例：sample@example.com">
+                  </div>
+                  <div class="form-field">
+                    <label for="reserve-phone">電話番号 <span class="optional">任意</span></label>
+                    <input id="reserve-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="例：000-0000-0000">
+                  </div>
+                  <div class="form-field">
+                    <label for="reserve-menu">ご希望のメニュー</label>
+                    <select id="reserve-menu" name="menu">{{FORM_MENU_OPTIONS}}</select>
+                  </div>
+                  <div class="form-field">
+                    <label for="reserve-date">ご希望日 <span class="optional">任意</span></label>
+                    <input id="reserve-date" name="date" type="date">
+                  </div>
+                  <div class="form-field">
+                    <label for="reserve-time">ご希望の時間帯 <span class="optional">任意</span></label>
+                    <select id="reserve-time" name="time">
+                      <option value="">指定なし</option>
+                      <option value="morning">午前（10:00〜12:00）</option>
+                      <option value="afternoon">午後（12:00〜16:00）</option>
+                      <option value="evening">夕方（16:00〜19:00）</option>
+                    </select>
+                  </div>
+                  <div class="form-field form-field--full">
+                    <label for="reserve-message">ご相談内容 <span class="optional">任意</span></label>
+                    <textarea id="reserve-message" name="message" rows="4" placeholder="なりたいイメージ、気になっていること、初めてで不安なことなど"></textarea>
+                  </div>
+                </div>
+                {{FORM_FOOTNOTE}}
+                <button id="reserve-submit" type="{{FORM_SUBMIT_TYPE}}" class="button button-primary button-block button-large" {{FORM_SUBMIT_ATTRS}}>{{FORM_SUBMIT}}</button>
+              </div>
+              {{FORM_SUCCESS_PANEL}}
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--access" id="access" aria-labelledby="access-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow">{{ACCESS_EYEBROW}}</p>
+        <h2 id="access-title">{{ACCESS_TITLE}}</h2>
+        {{ACCESS_LEAD}}
+      </header>
+      <div class="access-layout">
+        <div class="access-info">
+          <dl class="access-list">{{ACCESS_DETAILS}}</dl>
+        </div>
+        <figure class="access-map">
+          <div class="map-frame">
+            <img src="assets/img/map-sample.svg" alt="サンプルの地図イラスト" width="800" height="600" loading="lazy" decoding="async">
+            <span class="map-label">{{MAP_LABEL}}</span>
+          </div>
+          <figcaption>{{ACCESS_MAP_NOTE}}</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+</main>
+{{FOOTER}}
+{{MOBILE_CTA}}
+{{JSON_LD}}
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
